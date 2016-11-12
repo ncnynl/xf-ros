@@ -42,7 +42,11 @@ target_link_libraries(
  )
 </code>
 
-找到所有的target_link_libraries，修改/home/ubu/catkin_ws为你自己的工作空间/home/xxxx/catkin_ws
+ - 找到所有的target_link_libraries，修改/home/ubu/catkin_ws为你自己的工作空间/home/xxxx/catkin_ws
+
+修改代码：
+
+ - 找到 *.c 和*.cpp文件中查找appid = 58249817，替换58249817为你自己申请的APPID.
  
 
 编译：
@@ -52,48 +56,8 @@ target_link_libraries(
 
 文件结构：
 
-<code>
 ubu@ubu:~/xf-ros/xfei_asr$ tree
-.
-├── CMakeLists.txt
-├── include
-│   ├── formats.h
-│   ├── linuxrec.h
-│   ├── msp_cmn.h
-│   ├── msp_errors.h
-│   ├── msp_types.h
-│   ├── qisr.h
-│   ├── qtts.h
-│   ├── speech_recognizer.h
-│   └── xfei_asr
-├── lib
-│   └── libmsc.so
-├── package.xml
-└── src
-    ├── asr_sample.c
-    ├── gm_continuous_digit.abnf
-    ├── iat_publish_speak.cpp
-    ├── iat_record.c
-    ├── iat_sample.c
-    ├── linuxrec.c
-    ├── msc
-    │   ├── b0c4f74dc1f1bd969732c841500eff0d
-    │   │   ├── u.data
-    │   │   └── urec.data
-    │   └── msc.cfg
-    ├── sch_speak.c
-    ├── sch_text.c
-    ├── source.txt
-    ├── speech_recognizer.c
-    ├── tts_sample.c
-    ├── tts_sample.wav
-    ├── tts_subscribe_speak.cpp
-    ├── userwords.txt
-    └── wav
-        ├── iflytek01.wav
-        ├── iflytek02.wav
-        └── weather.pcm
-</code>
+
 
 使用说明：
 
