@@ -1,4 +1,11 @@
+
+详细的说明文档：
+
+ - http://www.ncnynl.com/archives/201611/1069.html
+
+
 xf-ros 说明
+
 
 <code>
 @author ncnynl <1043931@qq.com>
